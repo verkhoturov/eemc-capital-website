@@ -1,0 +1,19 @@
+.content-container {
+  box-sizing: border-box;
+  max-width: 1280px;
+  padding: 0 64px;
+  margin: 0 auto;
+
+  &--services {
+    padding: 51px 76px 58px;
+  }
+
+  @media (max-width: 1023px) {
+    width: 360px;
+    padding: 0 20px;
+
+    &--services {
+      padding: 32px 28px;
+    }
+  }
+}

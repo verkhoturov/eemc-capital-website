@@ -1,0 +1,39 @@
+.header {
+  padding: 28px 0;
+
+  @media (max-width: 1023px) {
+    padding: 15px 0 18px;
+}
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 170px;
+
+  @media (max-width: 1279px) {
+    column-gap: 13%;
+    position: relative;
+  }
+}
+
+.header__type-logo {
+  color: #000002;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+
+
+  @media (max-width: 1023px) {
+    font-size: 24px;
+    z-index: 5;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
