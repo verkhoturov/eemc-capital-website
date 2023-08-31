@@ -17,21 +17,23 @@
       bottom: 12px;
     }
 
-    &--active .nav__list {
+    &--active .nav__list-wrapper {
       background-color: #ffffff;
       top: 0;
     }
   }
 }
 
-.nav__list {
+.nav__list-wrapper {
   @media (max-width: 1023px) {
+    width: 100%;
+    min-height: 100vh;
     position: fixed;
     top: -100vh;
     left: 0;
     right: 0;
     z-index: 2;
-    transition: 0.3s linear;
+    transition: 0.3s steps(4, jump-none);
   }
 }
 
