@@ -13,3 +13,4 @@ source/css/*.map
 dist
 .cache
 Thumbs.db
+.parcel-cache
