@@ -1,7 +1,9 @@
 .swiper {
   @media (max-width:1023px) {
     width: 280px;
-    height: 323px;
+    // height: 323px;
+
+    min-height: 385px;
   }
 }
 
@@ -20,8 +22,8 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    min-height: 281px;
-    padding: 50px 24px 0 21px;
+    // min-height: 281px;
+    padding: 50px 24px;
   }
 }
 
@@ -30,7 +32,7 @@
     font-weight: 900;
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: -13px;
+    // margin-bottom: -13px;
   }
 }
 
