@@ -23,12 +23,6 @@
   box-sizing: border-box;
   min-height: 300px;
   padding: 19px 21px 0;
-
-  @media (max-width: 1023px) {
-    flex-basis: 100%;
-    padding-top: 14px;
-    min-height: 265px;
-  }
 }
 
 .services__title {
