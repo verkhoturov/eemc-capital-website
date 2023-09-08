@@ -2,7 +2,6 @@
   "name": "eemc-capital-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html --no-source-maps --open",
@@ -12,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
     "parcel": "latest",
     "sass": "^1.66.1"
   }
