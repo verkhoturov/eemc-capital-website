@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./sass/style.scss" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
   <title>EEMC Capital</title>
 </head>
 
@@ -63,6 +64,51 @@
     <section class="services">
       <div class="content-container content-container--services">
         <h2 class="visually-hidden">Services</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="services__title">Consultanță în management</h3>
+                <p class="services__desc">furnizăm o gama completă de   servicii   de
+                  management începând de la   bugetarea   costurilor până la
+                  managementul producției și managementul tehnologic</p>
+                <!-- a class="swiper-slide__link" href="#">management consulting</a -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="services__title">Consultanță în investiții</h3>
+                <p class="services__desc">realizăm o varietate de proiecte
+                  de investiții pornind de la cercetare   de marketing,   crearea   de   proiecte   cu
+                  cele mai bune soluții tehnice   pentru clienți, găsirea celor   mai   potrivite
+                  echipamente, oferirea serviciilor de consultanță de lansare și post-lansare</p>
+                <!-- a class="swiper-slide__link" href="#">investment consulting</a -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="services__title">Consultanță M&A</h3>
+                <p class="services__desc">pentru   maximizarea   performanței
+                  clienților în cazul activităților de   M&A,   oferim   suport în definirea   strategiilor,
+                  planificare, analiză și valorificare.   Am reușit să asistam la   incheierea   cu
+                  success  tranzacții de preluare a două societați metalurgice în anul 2021</p>
+                <!-- a class="swiper-slide__link" href="#">automatisation & robotisation</a -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="services__title">Automatizare și robotizare</h3>
+                <p class="services__desc">Avem experienta de peste 10 ani in domeniu de
+                  implementare Sisteme de Planificare a Resurselor Întreprinderii (ERP) pentru
+                  clienti mari, implementarea sistemelor de raportare și control financiar pentru
+                  orice scala de afaceri</p>
+                <!-- a class="swiper-slide__link" href="#">automatisation & robotisation</a -->
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
         <ul class="services__list">
           <li class="services__item">
             <h3 class="services__title">Consultanță în management</h3>
@@ -73,7 +119,7 @@
           </li>
           <li class="services__item">
             <h3 class="services__title">Consultanță în investiții</h3>
-            <p class="services__desc">realizăm o   varietate   de   proiecte
+            <p class="services__desc">realizăm o varietate de proiecte
               de investiții pornind de la cercetare   de marketing,   crearea   de   proiecte   cu
               cele mai bune soluții tehnice   pentru clienți, găsirea celor   mai   potrivite
               echipamente, oferirea serviciilor de consultanță de lansare și post-lansare</p>
@@ -121,6 +167,26 @@
     </div>
   </footer>
   <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      breakpoints: {
+        320: {
+          spaceBetween: 68,
+          direction: 'horizontal',
+          allowTouchMove: true,
+          loop: true,
+        },
+        1024: {
+          enabled: false,
+        }
+      },
+
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    });
+  </script>
 </body>
 
 </html>
