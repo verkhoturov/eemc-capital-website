@@ -4,6 +4,7 @@
 ## Demo
 
 [https://eemc-capital.netlify.app/](https://eemc-capital.netlify.app/)
+Образец dist лежит в архиве в корне проекта
 
 ## Quickstart
 
