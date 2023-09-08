@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./sass/style.scss" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
   <title>EEMC Capital</title>
 </head>
 
@@ -13,7 +14,7 @@
   <header class="header">
     <div class="header__container content-container">
       <a class="header__type-logo" href="index.html">EEMC Capital</a>
-      <nav class="header__nav nav nav--active" id="nav">
+      <nav class="header__nav nav" id="nav">
         <button class="nav__toggle" type="button" id="burger">
         </button>
         <div class="nav__list-wrapper">
@@ -60,6 +61,56 @@
     <section class="services">
       <div class="content-container content-container--services">
         <h2 class="visually-hidden">Services</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="swiper-slide__title">Management consulting</h3>
+                <p class="swiper-slide__desc">We provide a full range of management services from cost budgeting to
+                  production
+                  management and technology management.</p>
+                <a class="swiper-slide__link" href="#">management consulting</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="swiper-slide__title">Investment consulting</h3>
+                <p class="swiper-slide__desc">We carry out a variety of investment projects starting from marketing
+                  research,
+                  creating projects with the best technical solutions for...</p>
+                <a class="swiper-slide__link" href="#">investment consulting</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="swiper-slide__title">M&A consulting</h3>
+                <p class="swiper-slide__desc">We provide a full range of management services from cost budgeting to
+                  production
+                  management and technology management.</p>
+                <a class="swiper-slide__link" href="#">M&A consulting</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="swiper-slide__title">Automatisation & robotisation</h3>
+                <p class="swiper-slide__desc">We carry out a variety of investment projects starting from marketing
+                  research,
+                  creating projects with the best technical solutions for...</p>
+                <a class="swiper-slide__link" href="#">automatisation & robotisation</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <h3 class="swiper-slide__title">Automatisation & robotisation</h3>
+                <p class="swiper-slide__desc">We carry out a variety of investment projects starting from marketing
+                  research,
+                  creating projects with the best technical solutions for...</p>
+                <a class="swiper-slide__link" href="#">automatisation & robotisation</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
         <ul class="services__list">
           <li class="services__item">
             <h3 class="services__title">Management consulting</h3>
@@ -111,6 +162,26 @@
     </div>
   </footer>
   <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      breakpoints: {
+        320: {
+          spaceBetween: 68,
+          direction: 'horizontal',
+          allowTouchMove: true,
+          loop: true,
+        },
+        1024: {
+          enabled: false,
+        }
+      },
+
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    });
+  </script>
 </body>
 
 </html>
